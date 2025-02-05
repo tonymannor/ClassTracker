@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Class Attendance Tracker</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .class-container {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .class-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .class-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .class-name-display {
+      margin: 0;
+      font-size: 16px;
+    }
+    .edit-icon {
+      cursor: pointer;
+      color: #666;
+      font-size: 14px;
+    }
+    .student-row {
+      display: grid;
+      grid-template-columns: auto 100px 160px;
+      align-items: center;
+      margin: 5px 0;
+      padding: 5px;
+      background: #f5f5f5;
+    }
+    .timer {
+      text-align: center;
+    }
+    .button-group {
+      display: flex;
+      justify-content: flex-end;
+      gap: 5px;
+    }
+    button {
+      padding: 4px 8px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .control-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .student-input {
+      width: 150px;
+      padding: 4px;
+    }
+    .stop-all-btn {
+      background-color: #ff4444;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+    .start-all-btn {
+      background-color: #44aa44;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <input type="text" id="className" placeholder="Enter class name">
+    <button id="addClass">Add Class</button>
+    <button id="exportData">Export CSV</button>
+  </div>
+  <div id="classes"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

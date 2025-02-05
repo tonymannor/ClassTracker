@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Class Attendance Tracker V3",
+    "version": "1.0",
+    "description": "Track student attendance and time in class",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
